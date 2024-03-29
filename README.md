@@ -1,5 +1,9 @@
 # JeuGottePython
 
+## Auteur : ELKHALKI Yassine
+
+![exemple_jeu.png](images%2Fexemple_jeu.png)
+
 ## Sommaire
 1. [Introduction](#Introduction)
 2. [Description](#Description)
@@ -37,4 +41,21 @@ if __name__ == "__main__":
     circuit = random.choice(listeCircuits)
     j = Jeu("circuits/" + circuit)
     j.demarre()
+```  
+Une fois lancé, les instructions suivantes vous seront données dans la console python : 
+```bash
+###### ########
+#             #
+##### #########
+#         #   #
+#  ########   #
+#             #
+########  #####
+       #  #
+       #O##
+Que voulez-vous faire ?
+Voici les règles du jeu:
+ -Appuyez sur '+' pour ajouter un pion
+ -Appuyez sur 'entrée' pour jouer un tour
+ -Appuyez sur 'q' pour quitter la partie
 ```
