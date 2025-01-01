@@ -1,5 +1,5 @@
-from case import Case
-from pion import Pion
+from jeugrottepython.src.case import Case
+from jeugrottepython.src.pion import Pion
 
 class Jeu:
     def __init__(self, nom_de_carte):
