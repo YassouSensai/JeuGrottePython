@@ -1,4 +1,4 @@
-# JeuGottePython
+# JeuGrottePython
 
 ## Auteur : ELKHALKI Yassine
 
@@ -60,7 +60,7 @@ Une fois lancé, les instructions suivantes vous seront données dans la console
 ########  #####
        #  #
        #O##  
-       
+
 Que voulez-vous faire ?
 Voici les règles du jeu:
  - Entrez un '+' pour ajouter un pion
