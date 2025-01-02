@@ -63,7 +63,7 @@ class Jeu:
         self.affiche()
         play = 1
         while play == 1:
-            demarrons_le_jeu = input("Que voulez-vous faire ?\nVoici les règles du jeu:\n -Appuyez sur '+' pour ajouter un pion\n -Appuyez sur 'entrée' pour jouer un tour\n -Appuyez sur 'q' pour quitter la partie\n")
+            demarrons_le_jeu = input("\nQue voulez-vous faire ?\nVoici les règles du jeu:\n - Entrez un '+' pour ajouter un pion\n -Appuyez sur la touche 'entrée' pour jouer un tour\n - Entrez un 'q' pour quitter la partie\n")
 
             if demarrons_le_jeu == '+':
                 self.raffraichir_ecran()
@@ -85,4 +85,4 @@ class Jeu:
                 play = 0
 
             if demarrons_le_jeu != '+' and demarrons_le_jeu != '' and demarrons_le_jeu != 'r' and demarrons_le_jeu != 'q':
-                print("Nous ne comprenons pas ce que vous voulez faire !")
+                print("\nNous ne comprenons pas ce que vous voulez faire !")

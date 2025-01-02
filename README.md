@@ -33,17 +33,24 @@ Il y a également un dossier **circuit** qui contient les différents circuits d
 
 
 # Fonctionnement
-Pour lancer une partie de la grotte, il suffit de lancer le fichier **lancer_partie.py**. En effet, le fichier contient déjà les instructions pour
-lancer une partie avec une grotte choisie aléatoirement. Il suiffit donc de lancer le fichier avec la commande suivante :  
+Pour lancer une partie du jeu, il suffit d'éxecuter le projet avec la commande suivante à la racine du projet : 
 
-```bash
+```shell
+python -m jeugrottepython
+```
+
+En effet, la commande précédente executera le fichier [__main__.py](./jeugrottepython/__main__.py) qui contient déjà les instructions nécessaires au lancement d'une partie (voir ci-dessous)
+
+```python
 if __name__ == "__main__":
     circuit = random.choice(listeCircuits)
-    j = Jeu("circuits/" + circuit)
+    j = Jeu(os.path.join(repertoireCircuits, circuit))
     j.demarre()
 ```  
+  
+
 Une fois lancé, les instructions suivantes vous seront données dans la console python : 
-```bash
+```txt
 ###### ########
 #             #
 ##### #########
@@ -52,10 +59,11 @@ Une fois lancé, les instructions suivantes vous seront données dans la console
 #             #
 ########  #####
        #  #
-       #O##
+       #O##  
+       
 Que voulez-vous faire ?
 Voici les règles du jeu:
- -Appuyez sur '+' pour ajouter un pion
- -Appuyez sur 'entrée' pour jouer un tour
- -Appuyez sur 'q' pour quitter la partie
+ - Entrez un '+' pour ajouter un pion
+ - Appuyez sur la touche 'entrée' pour jouer un tour
+ - Entrez un 'q' pour quitter la partie
 ```
